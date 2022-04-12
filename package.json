@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "moz-todo-react",
   "version": "0.1.0",
   "private": true,
@@ -17,28 +18,27 @@
     "react-scripts": "^5.0.0",
     "web-vitals": "^2.1.4"
   },
+=======
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+>>>>>>> 000d7bc5d07b95c0e4ae4ffc5c570b828f51212d
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "engines": {
+    "node": "16"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
 }
